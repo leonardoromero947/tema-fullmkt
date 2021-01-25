@@ -1,8 +1,9 @@
 var preloader = document.getElementById('loader');
 $(document).ready(function() {
-    if($('body').hasClass('blog')) {
+    if(!($('body').hasClass('home'))) {
         $("#sticky-header").addClass('mkt_main_menu2');
     }
+    $(".bubble").hide();
 });
 
 function preLoaderHandler() {

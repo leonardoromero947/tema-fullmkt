@@ -302,6 +302,7 @@ get_header();
                             <p class="lang punto-servicio fuente-comun" key="sevicio1-3"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio1-4"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio1-5"></p>
+                            <a href="<?php echo get_site_url(); ?>"><stong><p class="lang punto-servicio azul-texto" key="ver_mas"></p></stong></a>
                         </div>
                     </div>
                 </div>
@@ -319,6 +320,7 @@ get_header();
                             <p class="lang punto-servicio fuente-comun" key="sevicio2-3"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio2-4"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio2-5"></p>
+                            <a href="<?php echo get_site_url(); ?>"><stong><p class="lang punto-servicio azul-texto" key="ver_mas"></p></stong></a>
                         </div>
                     </div>
                 </div>
@@ -335,6 +337,7 @@ get_header();
                             <p class="lang punto-servicio fuente-comun" key="sevicio3-2"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio3-3"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio3-4"></p>
+                            <a href="<?php echo get_site_url(); ?>"><stong><p class="lang punto-servicio azul-texto" key="ver_mas"></p></stong></a>
                         </div>
                     </div>
                 </div>
@@ -351,6 +354,7 @@ get_header();
                             <p class="lang punto-servicio fuente-comun" key="sevicio4-2"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio4-3"></p>
                             <p class="lang punto-servicio fuente-comun" key="sevicio4-4"></p>
+                            <a href="<?php echo get_site_url(); ?>"><stong><p class="lang punto-servicio azul-texto" key="ver_mas"></p></stong></a>
                         </div>
                     </div>
                 </div>
@@ -527,12 +531,101 @@ get_header();
             </div>
         </div>
     </div>
+        <!-- ============================================================== -->
+    <!-- Start - mkt BLOG -->
+    <!-- ============================================================== -->
+    
+    <div class="pricing_area" id="blog">
+    
+    <div id="testimonial-section" class="testimonial-bg pt-150">
+    <div class="col-lg-12">
+				
+        <div id="container-general" class="ready anim-section-features anim-section-desc anim-section-quote center">
+        
+            <section id="section-quote">
+            <div class="col-lg-12">
+					<div class="section_title center">
+                    <a href="#"><h1 class="lang fuente-titulo azul-texto" >BLOG</h1></a>
+					</div>
+					<div class="testi_bg_thumb center">
+						<div class="testi_bg_thumb_inner center">
+							<img src="<?php echo get_template_directory_uri();?>/assets/images/feature-shap1.png" alt="">
+						</div>
+					</div>
+				</div>
+                <!--Left Bubble Images-->
+                <div class="container-pe-quote left">
+                   
+                    <?php  
+                        $contador = 1;
+                        $args = array('post_type'=> 'post','orderby'    => 'ID','post_status' => 'publish','order'    => 'DESC','posts_per_page' => -1 );
+                        $result = new WP_Query( $args );
+                        if ( $result-> have_posts() ) : 
+                        while ( $result->have_posts() ) : $result->the_post();
+                    ?>
+                      <div class="bubble pp-quote li-quote-<?php echo $contador;?> " data-textquote="quote-text-<?php  echo $contador;?>"></div>
+                    
+                    <?php  $contador +=1;?>  
+                    <?php endwhile; 
+                        endif; wp_reset_postdata(); 
+                    ?>
+                </div>
+                <!--Left Bubble Images-->
+                <!--Center Testimonials-->
+                <div class="container-quote">
+                    <!--Testimonial 1-->
+                    <?php  
+                        $contador = 1;
+                        $args = array('post_type'=> 'post','orderby'    => 'ID','post_status' => 'publish','order'    => 'DESC','posts_per_page' => -1 );
+                        $result = new WP_Query( $args );
+                        if ( $result-> have_posts() ) : 
+                        while ( $result->have_posts() ) : $result->the_post();
+                    ?>
+                     <div class="quote quote-text-<?php echo $contador;  ?>  <?php if($contador == 1){ echo 'show';}else{ echo 'hide-bottom';}  ?>" data-ppquote="li-quote-<?php  echo $contador;  ?>">
+                        <div class="container-info">
+                            <div class="name center"><?php the_title(); ?></div>
+                            <div class="job center"><?php  the_date(); ?></div>
+                        </div>
+                        <a href="<?php  the_permalink(); ?>"><p class="center"> <?php the_excerpt();  ?></p></a>
+                    </div>
+                    
+                    <?php  $contador +=1;?>  
+                    <?php endwhile; 
+                        endif; wp_reset_postdata(); 
+                    ?>
+                </div>
+                <!--Right Bubble Images-->
+                <div class="container-pe-quote right">
+                    
+                    <?php  
+                        $contador = 7;
+                        $args = array('post_type'=> 'post','orderby'    => 'ID','post_status' => 'publish','order'    => 'DESC','posts_per_page' => -1 );
+                        $result = new WP_Query( $args );
+                        if ( $result-> have_posts() ) : 
+                        while ( $result->have_posts() ) : $result->the_post();
+                    ?>
+                     <div class="bubble pp-quote li-quote-<?php echo $contador;?>" data-textquote="quote-text-<?php echo $contador;?>">
+                    </div>
+                    
+                    <?php  $contador +=1;?>  
+                    <?php endwhile; 
+                        endif; wp_reset_postdata(); 
+                    ?>
+                </div>
+            </section>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End - mkt BLOG -->
+    <!-- ============================================================== -->
+
     <!-- ============================================================== -->
     <!-- Start - mkt Vacantes Area -->
     <!-- ============================================================== -->
-    </br>
-    </br>
-    </br>
+ 
     <div class="pricing_area" id="pricing">
         <div class="container centrado_vacantes">
             <div class="row">

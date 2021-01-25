@@ -57,10 +57,10 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="logo">
-                        <a class="logo_img" href="index.html" title="mkt">
+                        <a class="logo_img" href="http://fullmkt.com.mx/" title="mkt">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/1.png" alt="" />
                         </a>
-                        <a class="logo_tranalte" href="index.html" title="mkt">
+                        <a class="logo_tranalte" href="http://fullmkt.com.mx/" title="mkt">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-white.png" alt="" />
                         </a>
                     </div>
@@ -81,6 +81,9 @@
                             </li>
                             <li>
                                 <a class="lang fuente-comun" key="vacantes" href="#pricing"></a>
+                            </li>
+                            <li>
+                                <a class="lang fuente-comun" key="blog" href="#blog"></a>
                             </li>
                             <li>
                                 <a class="lang fuente-comun" key="contacto" href="#contact"></a>
@@ -121,6 +124,9 @@
                 </li>
                 <li>
                     <a class="lang fuente-comun" key="vacantes" href="#pricing"></a>
+                </li>
+                <li>
+                    <a class="lang fuente-comun" key="blog" href="#blog"></a>
                 </li>
                 <li>
                     <a class="lang fuente-comun" key="contacto" href="#contact"></a>

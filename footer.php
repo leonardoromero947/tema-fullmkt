@@ -11,7 +11,9 @@
                     <div class="single_footer_title pb-4">
                         <br>
                         <br>
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/1.png" alt="" />
+                        <a href="#home">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/1.png" alt="" />
+                        </a>
                     </div>
                     <!-- <div class="single_footer_text">
 						<p>The point of using Lorem Ipsum is that it has a more-or-less normal distrition of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
@@ -88,7 +90,7 @@
 
     <div class="footer_shape">
         <div class="clouds">
-            <img src=<?php echo get_template_directory_uri();?>/assets/images/boy2.png" alt="03" class="cloud3" />
+            <img src="<?php echo get_template_directory_uri();?>/assets/images/boy2.png" alt="03" class="cloud3" />
         </div>
     </div>
 </div>
@@ -134,7 +136,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 var gcaMain = new GetChatApp({
-                    'mobileNumber' : '5556610904',
+                    'mobileNumber' : '5579099086',
                     'titleMessage' : 'Consultanos por wathsapp!',
                     'welcomeMessage': 'Hola en que podemos ayudarte',
                     'position' : 'left'

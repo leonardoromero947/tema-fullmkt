@@ -5,7 +5,8 @@
         "servicios": "SERVICIOS",
         "casos": "CASOS",
         "vacantes": "VACANTES",
-        "contacto": "CONTACTO",
+        "blog": "BLOG",
+        "contacto": "CONTACTANOS",
         "titulo1": "Marketing",
         "titulo2": "Experiences.",
         "titulo_secundario_c": "EXPERTOS EN LA EJECUCIÓN",
@@ -57,7 +58,8 @@
         "vacante5": "Envianós un email a : contact@fullmarketing.com",
         "creatividad": "Creatividad",
         "estrategia": "Estrategia",
-        "promocion": "Promoción"
+        "promocion": "Promoción",
+        "ver_mas": "Ver más......."
     },
     "en": {
         "inicio": "HOME",
@@ -65,7 +67,8 @@
         "servicios": "SERVICES",
         "casos": "CASES",
         "vacantes": "VACANCIES",
-        "contacto": "CONTACT",
+        "blog": "BLOG",
+        "contacto": "CONTACT US",
         "titulo1": "Marketing",
         "titulo2": "Experiences.",
         "titulo_secundario_c": "EXPERTOS EN LA EJECUCIÓN",
@@ -117,6 +120,7 @@
         "vacante5": "Send us an email to: contact@fullmarketing.com",
         "creatividad": "Creativity",
         "estrategia": "Strategy",
-        "promocion": "Promotion"
+        "promocion": "Promotion",
+        "ver_mas": "See more....."
     }
 }
